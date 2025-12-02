@@ -52,3 +52,4 @@ document.addEventListener('DOMContentLoaded', function() {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { sumar, agregarItem, limpiarLista };
 }
+// Función agregarItem confirmada
