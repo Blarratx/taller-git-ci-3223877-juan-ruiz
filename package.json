@@ -1,0 +1,23 @@
+{
+  "name": "taller-git-ci-3223877-juan-ruiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blarratx/taller-git-ci-3223877-juan-ruiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blarratx/taller-git-ci-3223877-juan-ruiz/issues"
+  },
+  "homepage": "https://github.com/Blarratx/taller-git-ci-3223877-juan-ruiz#readme",
+  "devDependencies": {
+    "prettier": "^3.7.3"
+  }
+}

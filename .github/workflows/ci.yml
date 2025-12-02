@@ -1,0 +1,41 @@
+name: CI Pipeline - Taller Git SENA
+
+on:
+  push:
+    branches: [main, feat/*]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality-checks:
+    name: Verificación de Calidad
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4
+      
+    - name: Configurar Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Instalar dependencias
+      run: npm ci
+      
+    - name: Verificar formato con Prettier
+      run: npm run format-check
+      
+    - name: Ejecutar pruebas unitarias
+      run: npm test
+      
+    - name: Aplicar formato automático (si falla)
+      if: failure()
+      run: |
+        npm run format
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add .
+        git commit -m "style: formatear código automáticamente" || echo "No hay cambios para commitear"
+        git push
