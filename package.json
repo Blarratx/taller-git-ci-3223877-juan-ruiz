@@ -1,23 +1,23 @@
 {
   "name": "taller-git-ci-3223877-juan-ruiz",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Taller Integrador Git & GitHub - SENA - Ficha 3223877",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "format": "prettier --write .",
+    "format-check": "prettier --check ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Blarratx/taller-git-ci-3223877-juan-ruiz.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Blarratx/taller-git-ci-3223877-juan-ruiz/issues"
-  },
-  "homepage": "https://github.com/Blarratx/taller-git-ci-3223877-juan-ruiz#readme",
+  "keywords": [
+    "sena",
+    "git",
+    "github",
+    "ficha-3223877"
+  ],
+  "author": "Juan Ruiz - Juanruiz018@hotmail.com",
+  "license": "MIT",
   "devDependencies": {
-    "prettier": "^3.7.3"
+    "prettier": "^3.0.0",
+    "jest": "^29.0.0"
   }
 }

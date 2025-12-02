@@ -1,81 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taller Git SENA - Juan Ruiz</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 12px;
-            margin: 8px 0;
-            background-color: #ecf0f1;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-        }
-        .info {
-            background-color: #e8f4fc;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px 0;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 12px;
+        margin: 8px 0;
+        background-color: #ecf0f1;
+        border-radius: 5px;
+        border-left: 4px solid #3498db;
+      }
+      .info {
+        background-color: #e8f4fc;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Hola SENA</h1>
-        <p>Este es mi primer taller con Git y CI.</p>
-        
-        <div class="info">
-            <p><strong>Autor:</strong> Juan Ruiz</p>
-            <p><strong>Email:</strong> Juanruiz018@hotmail.com</p>
-            <p><strong>Ficha:</strong> 3223877</p>
-            <p><strong>Instructor:</strong> Gustavo Bolaños</p>
-        </div>
-        
-        <h2>Lista de Elementos</h2>
-        <ul id="lista">
-            <!-- Los elementos se agregarán aquí -->
-        </ul>
-        
-        <button id="agregarBtn">Agregar Nuevo Elemento</button>
-        <button id="limpiarBtn">Limpiar Lista</button>
-        
-        <script src="app.js"></script>
+      <h1>Hola SENA</h1>
+      <p>Este es mi primer taller con Git y CI.</p>
+
+      <div class="info">
+        <p><strong>Autor:</strong> Juan Ruiz</p>
+        <p><strong>Email:</strong> Juanruiz018@hotmail.com</p>
+        <p><strong>Ficha:</strong> 3223877</p>
+        <p><strong>Instructor:</strong> Gustavo Bolaños</p>
+      </div>
+
+      <h2>Lista de Elementos</h2>
+      <ul id="lista">
+        <!-- Los elementos se agregarán aquí -->
+      </ul>
+
+      <button id="agregarBtn" title="Agregar elemento">
+        Agregar Nuevo Elemento
+      </button>
+      <button id="limpiarBtn">Limpiar Lista</button>
+
+      <script src="app.js"></script>
     </div>
-</body>
+  </body>
 </html>
