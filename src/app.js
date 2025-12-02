@@ -5,6 +5,12 @@ function sumar(a, b) {
 
 // Función para agregar elementos a la lista
 function agregarItem(texto) {
+    // Validar que el texto no esté vacío
+    if (!texto || texto.trim() === '') {
+        console.warn('No se puede agregar elemento vacío a la lista');
+        return;
+    }
+    
     const lista = document.getElementById('lista');
     if (lista && texto.trim() !== '') {
         const item = document.createElement('li');
